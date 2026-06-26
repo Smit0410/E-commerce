@@ -4,7 +4,7 @@ import InputField from "../../components/shared/InputField";
 import Button from "../../components/shared/Button";
 import Card from "../../components/shared/Card/Card";
 import { debounce } from "lodash";
-import { Plus, RotateCcw, ShieldCheck, Truck, X } from "lucide-react";
+import { RotateCcw, ShieldCheck, Truck, X } from "lucide-react";
 
 export interface Product {
   availabilityStatus: string;
