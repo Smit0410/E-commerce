@@ -1,0 +1,18 @@
+.text-brand-purple {
+  color: #4f46e5;
+}
+.bg-brand-purple {
+  background-color: #4f46e5;
+}
+.hover-bg-brand-purple:hover {
+  background-color: #4338ca;
+}
+.border-brand-purple {
+  border-color: #4f46e5;
+}
+.text-discount-green {
+  color: #10b981;
+}
+.bg-discount-green-light {
+  background-color: #ecfdf5;
+}
