@@ -6,6 +6,8 @@ import ProtectedRoute from "./ProtectedRoute.tsx";
 import Product from "./pages/product/Product";
 import Cart from "./pages/cart/Cart.tsx";
 import Navbar from "./components/Navbar.tsx";
+import Recipes from "./pages/Recipe/Recipes.tsx";
+import RecipeInDetail from "./pages/Recipe/RecipeInDetail.tsx";
 function App() {
   return (
     <>
@@ -17,6 +19,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/product" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/Recipes" element={<Recipes />} />
+          <Route path="/Recipes/:id" element={<RecipeInDetail />} />
           <Route path="/rendom" element={<div>hello</div>} />
           {/* <Route path="/*" element={<Home />} /> */}
         </Route>

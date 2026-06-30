@@ -53,8 +53,6 @@ const Cart = () => {
 
       const uniqueIdCount = parshItem.reduce(
         (acc: Record<string, number>, product) => {
-          console.log(product, acc);
-
           if (acc[product.id]) {
             acc[product.id] += 1;
           } else {
@@ -65,7 +63,6 @@ const Cart = () => {
         },
         {},
       );
-
       const cartProducts: CartProduct[] = Object.entries(uniqueIdCount)
         .map((ele) => {
           const [id, quantities] = ele;
@@ -225,11 +222,11 @@ const Cart = () => {
                   ${ele.price}
                 </p>
               </div>
-              <div className="col-span-2 flex justify-center">
-                <div className="flex items-center border border-gray-200 rounded-lg ">
+              <div className="col-span-2 flex justify-center ">
+                <div className="flex items-center border border-gray-200 rounded-lg overflow-hidden ">
                   <button
                     onClick={() => handlRemoveQuantity(ele.id)}
-                    className="px-3 w-8 py-1 bg-gray-50 hover:bg-gray-100 border-r border-gray-200"
+                    className="px-3 w-8 py-1 bg-gray-50 hover:bg-gray-100 border-r  border-gray-200"
                   >
                     −
                   </button>

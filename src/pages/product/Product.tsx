@@ -7,6 +7,7 @@ import { debounce } from "lodash";
 import { RotateCcw, ShieldCheck, Truck, X } from "lucide-react";
 
 export interface Product {
+  quantity?: number;
   availabilityStatus: string;
   brand: string;
   category: string;
@@ -60,6 +61,7 @@ const Product = () => {
   const handleSearch = useMemo(() => debounce(getProduct, 1000), []);
   useEffect(() => {
     getProduct({ skip: 0 });
+    console.log(saveItems);
 
     const allItems = localStorage.getItem("saveItem");
     if (allItems) {

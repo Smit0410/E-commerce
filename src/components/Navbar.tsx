@@ -14,6 +14,10 @@ const Navbar = () => {
       <Link to={"/cart"} className="w-full hover:bg-gray-900">
         Cart
       </Link>
+      <div>|</div>
+      <Link to={"/Recipes"} className="w-full hover:bg-gray-900">
+        Recipes
+      </Link>
     </div>
   );
 };
